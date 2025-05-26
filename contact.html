@@ -75,18 +75,17 @@
                                         <textarea class="form-control" id="message" name="message" type="text" placeholder="Enter your message here..." style="height: 10rem" required></textarea>
                                         <label for="message">Message</label>
                                     </div>
-                                    <!-- Honeypot -->
-                                    <input type="text" name="_honey" style="display:none">
-                                    <!-- Disable Captcha -->
+                                    <!-- FormSubmit.co Configuration -->
+                                    <input type="hidden" name="_subject" value="New Contact Form Submission">
+                                    <input type="hidden" name="_template" value="table">
                                     <input type="hidden" name="_captcha" value="false">
-                                    <!-- Redirect to index page -->
-                                    <input type="hidden" name="_next" value="index.html">
+                                    <input type="hidden" name="_next" value="https://jacobhamm.com/index.html">
                                     <!-- Success Message -->
                                     <div id="successMessage" class="alert alert-success text-center mb-3" style="display: none;">
                                         Thank you for your message! Redirecting to homepage...
                                     </div>
                                     <!-- Submit Button-->
-                                    <div class="d-grid"><button class="btn btn-primary btn-lg" type="submit" onclick="showSuccessMessage()">Submit</button></div>
+                                    <div class="d-grid"><button class="btn btn-primary btn-lg" type="submit">Submit</button></div>
                                 </form>
                             </div>
                         </div>
