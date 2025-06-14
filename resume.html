@@ -16,11 +16,22 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            .custom-shadow {
+                box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4) !important;
+            }
+            .sticky-nav {
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+                background-color: white;
+            }
+        </style>
     </head>
     <body class="d-flex flex-column h-100 bg-light">
         <main class="flex-shrink-0">
             <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 sticky-nav custom-shadow">
                 <div class="container px-5">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -34,12 +45,11 @@
                 </div>
             </nav>
             <!-- Page Content-->
-            <div class="container-fluid px-5 my-5">
+            <div class="container-fluid px-5 my-5" style="margin-top: 6rem !important;">
                 <div class="row">
                     <!-- Left Side Image -->
                     <div class="col-lg-2 d-none d-lg-block">
-                        <div class="position-sticky" style="top: 2rem;">
-                            <img src="./assets/Prestack.jpg" alt="Side Decoration" class="img-fluid rounded-3 shadow-sm mb-4">
+                        <div class="position-sticky" style="top: 6rem; z-index: 1;">
                             <img src="./assets/Volleyball.jpeg" alt="Side Decoration" class="img-fluid rounded-3 shadow-sm mb-4">
                             <img src="./assets/Running.JPG" alt="Side Decoration" class="img-fluid rounded-3 shadow-sm">
                         </div>
@@ -64,40 +74,36 @@
                                         </a>
                                     </div>
                                     <!-- Experience Card 1-->
-                                    <div class="card shadow border-0 rounded-4 mb-5">
+                                    <div class="card custom-shadow border-0 rounded-4 mb-5">
                                         <div class="card-body p-5">
-                                            <div class="row align-items-center gx-5">
-                                                <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                                    <div class="bg-light p-4 rounded-4">
-                                                        <div class="text-primary fw-bolder mb-2">2025 - Present</div>
-                                                        <div class="small fw-bolder">IT Bench Specialist</div>
-                                                        <div class="small text-muted">GDC IT Solutions</div>
-                                                        <div class="small text-muted">Mechanicsburg, PA</div>
-                                                    </div>
+                                            <div class="d-flex flex-wrap justify-content-center">
+                                                <div class="bg-light p-4 rounded-4 me-4 mb-3 text-center" style="min-width: 250px;">
+                                                    <div class="text-primary fw-bolder mb-2">2025 - Present</div>
+                                                    <div class="fw-bolder mb-2">IT Bench Specialist</div>
+                                                    <div class="text-muted mb-1">GDC IT Solutions</div>
+                                                    <div class="text-muted">Mechanicsburg, PA</div>
                                                 </div>
-                                                <div class="col-lg-8"><div>While working at GDC IT Solutions as a bench technician, I gained valuable hands-on experience with laptop hardware, including diagnosing issues, replacing components, and performing system reimaging. This was my first 
-                                                    full-time job, and it gave me a solid understanding of what it means to work in a professional IT environment. A significant part of my responsibilities also involved using a web-based inventory management system called Finale to track incoming
-                                                     and outgoing devices. This helped me understand the logistical side of IT operations and how organized inventory tracking plays a key role in efficiency and accountability. Overall, the role not only deepened my technical skills but also gave 
-                                                     me a real-world perspective on full-time work in the IT field.</div></div>
+                                                <div class="flex-grow-1 text-center" style="min-width: 300px;">
+                                                    <p>While working at GDC IT Solutions as a bench technician, I gained valuable hands-on experience with laptop hardware, including diagnosing issues, replacing components, and performing system reimaging. This was my first full-time job, and it gave me a solid understanding of what it means to work in a professional IT environment.</p>
+                                                    <p>A significant part of my responsibilities also involved using a web-based inventory management system called Finale to track incoming and outgoing devices. This helped me understand the logistical side of IT operations and how organized inventory tracking plays a key role in efficiency and accountability. Overall, the role not only deepened my technical skills but also gave me a real-world perspective on full-time work in the IT field.</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <!-- Experience Card 2-->
-                                    <div class="card shadow border-0 rounded-4 mb-5">
+                                    <div class="card custom-shadow border-0 rounded-4 mb-5">
                                         <div class="card-body p-5">
-                                            <div class="row align-items-center gx-5">
-                                                <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                                    <div class="bg-light p-4 rounded-4">
-                                                        <div class="text-primary fw-bolder mb-2">2023 - 2024</div>
-                                                        <div class="small fw-bolder">IT Intern</div>
-                                                        <div class="small text-muted">Pennsylvania School Boards Association</div>
-                                                        <div class="small text-muted">Mechanicsburg, PA</div>
-                                                    </div>
+                                            <div class="d-flex flex-wrap justify-content-center">
+                                                <div class="bg-light p-4 rounded-4 me-4 mb-3 text-center" style="min-width: 250px;">
+                                                    <div class="text-primary fw-bolder mb-2">2023 - 2024</div>
+                                                    <div class="fw-bolder mb-2">IT Intern</div>
+                                                    <div class="text-muted mb-1">Pennsylvania School Boards Association</div>
+                                                    <div class="text-muted">Mechanicsburg, PA</div>
                                                 </div>
-                                                <div class="col-lg-8"><div>As an IT intern at PSBA, I was introduced to the inner workings of the IT department and how they leverage technology to support the company's operations. This experience opened my eyes to the critical role IT plays in 
-                                                    maintaining smooth day-to-day functions. I gained insight into how the team manages basic networking tasks, such as configuring routers and switches, setting up user access, and troubleshooting connectivity issues. I also learned about the 
-                                                    importance of system monitoring, including tracking server performance, ensuring uptime, and using tools to proactively detect and address potential issues before they impact productivity. Overall, the internship gave me hands-on exposure to 
-                                                    real-world IT practices and deepened my understanding of how technology supports business infrastructure. </div></div>
+                                                <div class="flex-grow-1 text-center" style="min-width: 300px;">
+                                                    <p>As an IT intern at PSBA, I was introduced to the inner workings of the IT department and how they leverage technology to support the company's operations. This experience opened my eyes to the critical role IT plays in maintaining smooth day-to-day functions.</p>
+                                                    <p>I gained insight into how the team manages basic networking tasks, such as configuring routers and switches, setting up user access, and troubleshooting connectivity issues. I also learned about the importance of system monitoring, including tracking server performance, ensuring uptime, and using tools to proactively detect and address potential issues before they impact productivity. Overall, the internship gave me hands-on exposure to real-world IT practices and deepened my understanding of how technology supports business infrastructure.</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -106,43 +112,35 @@
                                 <section>
                                     <h2 class="text-secondary fw-bolder mb-4">Education</h2>
                                     <!-- Education Card 1-->
-                                    <div class="card shadow border-0 rounded-4 mb-5">
+                                    <div class="card custom-shadow border-0 rounded-4 mb-5">
                                         <div class="card-body p-5">
-                                            <div class="row align-items-center gx-5">
-                                                <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                                    <div class="bg-light p-4 rounded-4">
-                                                        <div class="text-secondary fw-bolder mb-2">2021 - 2025</div>
-                                                        <div class="mb-2">
-                                                            <div class="small fw-bolder">Messiah University</div>
-                                                            <div class="small text-muted">Mechanicsburg, PA</div>
-                                                        </div>
-                                                        <div class="fst-italic">
-                                                            <div class="small text-muted">Bachelor's</div>
-                                                            <div class="small text-muted">Computer and Information Science</div>
-                                                        </div>
+                                            <div class="d-flex flex-wrap justify-content-center">
+                                                <div class="bg-light p-4 rounded-4 me-4 mb-3 text-center" style="min-width: 250px;">
+                                                    <div class="text-secondary fw-bolder mb-2">2021 - 2025</div>
+                                                    <div class="fw-bolder mb-2">Messiah University</div>
+                                                    <div class="text-muted mb-1">Mechanicsburg, PA</div>
+                                                    <div class="fst-italic">
+                                                        <div class="text-muted">Bachelor's</div>
+                                                        <div class="text-muted">Computer and Information Science</div>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-8"><div>I started college as an undecided major. After a year of gen-eds and thinking, I came to realize I had a passion for technology. During my time at Messiah I was on the mens volleyball team.
-                                                    
-                                                </div></div>
+                                                <div class="flex-grow-1 text-center" style="min-width: 300px;">
+                                                    <p>I started college as an undecided major. After a year of gen-eds and thinking, I came to realize I had a passion for technology. During my time at Messiah I was on the mens volleyball team.</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <!-- Education Card 2-->
-                                    <div class="card shadow border-0 rounded-4 mb-5">
+                                    <div class="card custom-shadow border-0 rounded-4 mb-5">
                                         <div class="card-body p-5">
-                                            <div class="row align-items-center gx-5">
-                                                <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                                    <div class="bg-light p-4 rounded-4">
-                                                        <div class="text-secondary fw-bolder mb-2">2017 - 2021</div>
-                                                        <div class="mb-2">
-                                                            <div class="small fw-bolder">Northern York High School</div>
-                                                            <div class="small text-muted">Dillsburg, PA</div>
-                                                        </div>
-                                                    </div>
+                                            <div class="d-flex flex-wrap justify-content-center">
+                                                <div class="bg-light p-4 rounded-4 me-4 mb-3 text-center" style="min-width: 250px;">
+                                                    <div class="text-secondary fw-bolder mb-2">2017 - 2021</div>
+                                                    <div class="fw-bolder mb-2">Northern York High School</div>
+                                                    <div class="text-muted">Dillsburg, PA</div>
                                                 </div>
-                                                <div class="col-lg-8">During my time at Northern York High School, I was on the basketball team and volleyball team. I was not sure of what I wanted to do until I got in to college
-                                                    so my time in high school was spent growing my network and learning about a lot of fields to go into.
+                                                <div class="flex-grow-1 text-center" style="min-width: 300px;">
+                                                    <p>During my time at Northern York High School, I was on the basketball team and volleyball team. I was not sure of what I wanted to do until I got in to college so my time in high school was spent growing my network and learning about a lot of fields to go into.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -153,7 +151,7 @@
                                 <!-- Skills Section-->
                                 <section>
                                     <!-- Skillset Card-->
-                                    <div class="card shadow border-0 rounded-4 mb-5">
+                                    <div class="card custom-shadow border-0 rounded-4 mb-5">
                                         <div class="card-body p-5">
                                             <!-- Professional skills list-->
                                             <div class="mb-5">
@@ -186,8 +184,7 @@
 
                     <!-- Right Side Image -->
                     <div class="col-lg-2 d-none d-lg-block">
-                        <div class="position-sticky" style="top: 2rem;">
-                            <img src="./assets/Poststack.jpg" alt="Side Decoration" class="img-fluid rounded-3 shadow-sm mb-4">
+                        <div class="position-sticky" style="top: 6rem; z-index: 1;">
                             <img src="./assets/Yellowstone.jpg" alt="Side Decoration" class="img-fluid rounded-3 shadow-sm mb-4">
                             <img src="./assets/Basketball.JPG" alt="Side Decoration" class="img-fluid rounded-3 shadow-sm">
                         </div>
@@ -216,3 +213,4 @@
         <script src="js/scripts.js"></script>
     </body>
 </html>
+
