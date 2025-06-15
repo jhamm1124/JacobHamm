@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -18,13 +18,31 @@
         <link href="css/styles.css" rel="stylesheet" />
         <style>
             .custom-shadow {
-                box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4) !important;
+                box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.1) !important;
             }
             .sticky-nav {
                 position: sticky;
                 top: 0;
                 z-index: 1000;
-                background-color: white;
+                background-color: #212529;
+            }
+            body {
+                background-color: #212529;
+                color: #f8f9fa;
+            }
+            .bg-light {
+                background-color: #2c3034 !important;
+            }
+            .text-muted {
+                color: #adb5bd !important;
+            }
+            .btn-outline-dark {
+                color: #f8f9fa;
+                border-color: #f8f9fa;
+            }
+            .btn-outline-dark:hover {
+                background-color: #f8f9fa;
+                color: #212529;
             }
             /* Theme Toggle Switch Styles */
             .switch {
@@ -73,8 +91,6 @@
                 background-color: #fdfefedc;
                 transition: .4s;
                 border-radius: 30px;
-                border: 2px solid #adb5bd;
-                box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
             }
 
             .slider:before {
@@ -96,7 +112,6 @@
 
             .input__check:checked + .slider {
                 background-color: #17202A;
-                border-color: #495057;
             }
 
             .input__check:checked + .slider:before {
@@ -114,39 +129,39 @@
             }
         </style>
     </head>
-    <body class="d-flex flex-column h-100 bg-light">
+    <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
             <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 sticky-nav custom-shadow">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 sticky-nav custom-shadow">
                 <div class="container px-5">
                     <label class="switch me-3">
-                        <input type="checkbox" class="input__check" id="themeToggle">
+                        <input type="checkbox" class="input__check" id="themeToggle" checked>
                         <span class="slider"></span>
                     </label>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index2.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="resume2.html">Resume</a></li>
+                            <li class="nav-item"><a class="nav-link" href="projects2.html">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact2.html">Contact</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
             <!-- Header-->
-            <header class="py-5">
+            <header class="py-5 bg-dark">
                 <div class="container px-5 pb-5">
                     <div class="row gx-5 align-items-center">
                         <div class="col-xxl-5">
                             <!-- Header text content-->
                             <div class="text-center text-xxl-start">
                                 <!-- <div class="badge bg-gradient-primary-to-secondary text-white mb-4"><div class="text-uppercase">Design &middot; Development &middot; Marketing</div></div> -->
-                                <h1 class="display-3 fw-bolder"><span class="text-gradient d-inline">Jacob Hamm</span></h1>
+                                <h1 class="display-3 fw-bolder text-white"><span class="text-gradient d-inline">Jacob Hamm</span></h1>
                                 <div class="fs-3 fw-light text-muted mb-5"><!-- I can help your business --></div>
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
-                                    <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="resume.html">Resume</a>
-                                    <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="projects.html">Projects</a>
+                                    <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="resume2.html">Resume</a>
+                                    <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="projects2.html">Projects</a>
                                 </div>
                             </div>
                         </div>
@@ -295,16 +310,16 @@
             </section>
         </main>
         <!-- Footer-->
-        <footer class="bg-white py-4 mt-auto">
+        <footer class="bg-dark py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; jacobhamm.com 2025</div></div>
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; jacobhamm.com 2025</div></div>
                     <div class="col-auto">
-                        <a class="small" href="#!">Privacy</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Terms</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Contact</a>
+                        <a class="small text-white" href="#!">Privacy</a>
+                        <span class="mx-1 text-white">&middot;</span>
+                        <a class="small text-white" href="#!">Terms</a>
+                        <span class="mx-1 text-white">&middot;</span>
+                        <a class="small text-white" href="#!">Contact</a>
                     </div>
                 </div>
             </div>
@@ -315,8 +330,8 @@
         <script src="js/scripts.js"></script>
         <script>
             document.getElementById('themeToggle').addEventListener('change', function() {
-                if (this.checked) {
-                    window.location.href = 'index2.html';
+                if (!this.checked) {
+                    window.location.href = 'index.html';
                 }
             });
         </script>
