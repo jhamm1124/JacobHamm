@@ -304,7 +304,18 @@
         <script>
             document.getElementById('themeToggle').addEventListener('change', function() {
                 if (this.checked) {
+                    // Save current scroll position
+                    localStorage.setItem('scrollPosition', window.scrollY);
                     window.location.href = 'resume2.html';
+                }
+            });
+
+            // Restore scroll position on page load
+            window.addEventListener('load', function() {
+                const scrollPosition = localStorage.getItem('scrollPosition');
+                if (scrollPosition) {
+                    window.scrollTo(0, parseInt(scrollPosition));
+                    localStorage.removeItem('scrollPosition');
                 }
             });
         </script>
