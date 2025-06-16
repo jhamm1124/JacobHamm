@@ -594,7 +594,7 @@ progress {
   color: #6c757d;
 }
 .blockquote-footer::before {
-  content: "— ";
+  content: "— ";
 }
 
 .img-fluid {
@@ -1567,40 +1567,6 @@ progress {
   .gy-xl-5 {
     --bs-gutter-y: 3rem;
   }
-}
-/* Mobile Navigation Styles */
-@media (max-width: 991.98px) {
-    .navbar-collapse {
-        background-color: var(--bs-body-bg);
-        padding: 1rem;
-        border-radius: 0.5rem;
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-        margin-top: 1rem;
-    }
-
-    .navbar-nav {
-        text-align: center;
-    }
-
-    .nav-item {
-        margin: 0.5rem 0;
-    }
-
-    .switch {
-        width: 3em;
-        height: 1.7em;
-    }
-
-    .slider:before {
-        height: 1.2em;
-        width: 1.2em;
-        left: 0.25em;
-        bottom: 0.25em;
-    }
-
-    .input__check:checked + .slider:before {
-        transform: translateX(1.3em);
-    }
 }
 @media (min-width: 1400px) {
   .col-xxl {
