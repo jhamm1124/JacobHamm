@@ -293,15 +293,8 @@
         <!-- Footer-->
         <footer class="bg-white py-4 mt-auto">
             <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; jhamm1124.github.io 2025</div></div>
-                    <div class="col-auto">
-                        <a class="small" href="#!">Privacy</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Terms</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Contact</a>
-                    </div>
+                <div class="row align-items-center flex-column">
+                    <div class="col-auto"><div class="small m-0 text-center">Copyright &copy; jhamm1124.github.io  <span id="currentYear"></span></div></div>
                 </div>
             </div>
         </footer>
@@ -310,6 +303,9 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         <script>
+            // Set current year in copyright
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+            
             document.getElementById('themeToggle').addEventListener('change', function() {
                 if (this.checked) {
                     // Save current scroll position
