@@ -159,7 +159,7 @@
                                     <!-- Optional but recommended -->
                                     <input type="hidden" name="subject" value="New Contact Form Submission - Your Website">
 
-                                    <!-- Anti-spam honeypot (hidden from users) -->
+                                    <!-- Anti-spam honeypot (keep this) -->
                                     <input type="text" name="botcheck" style="display: none;">
 
                                     <!-- Name input-->
@@ -167,23 +167,32 @@
                                         <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." required />
                                         <label for="name">Full name</label>
                                     </div>
+
                                     <!-- Email address input-->
                                     <div class="form-floating mb-3">
                                         <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" required />
                                         <label for="email">Email address</label>
                                     </div>
+
                                     <!-- Phone number input-->
                                     <div class="form-floating mb-3">
                                         <input class="form-control" id="phone" name="phone" type="tel" placeholder="(123) 456-7890" />
                                         <label for="phone">Phone number</label>
                                     </div>
+
                                     <!-- Message input-->
                                     <div class="form-floating mb-3">
-                                        <textarea class="form-control" id="message" name="message" type="text" placeholder="Enter your message here..." style="height: 10rem" required></textarea>
+                                        <textarea class="form-control" id="message" name="message" placeholder="Enter your message here..." style="height: 10rem" required></textarea>
                                         <label for="message">Message</label>
                                     </div>
+
+                                    <!-- hCAPTCHA - Add this just before the submit button -->
+                                    <div class="h-captcha" data-captcha="true" style="margin-bottom: 1rem;"></div>
+
                                     <!-- Submit Button-->
-                                    <div class="d-grid"><button class="btn btn-primary btn-lg" type="submit">Submit</button></div>
+                                    <div class="d-grid">
+                                        <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+                                    </div>
                                 </form>
                             </div>
                         </div>
@@ -321,5 +330,6 @@
                 }
             }
         </script>
+        <script src="https://web3forms.com/client/script.js" async defer></script>
     </body>
 </html>
